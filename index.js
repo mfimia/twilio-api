@@ -10,7 +10,7 @@ const client = new twilio(accountSid, authToken);
 
 client.messages
   .create({
-    body: "Hola compaps",
+    body: "Lorem ipsum",
     to: process.env.END_NUM, // Text this number
     from: process.env.TWILIO_TRIAL_NUM, // From a valid Twilio number
   })
