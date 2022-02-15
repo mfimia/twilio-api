@@ -9,7 +9,7 @@ dotenv.config();
 // projectId: ID of the GCP project where Dialogflow agent is deployed
 const projectId = process.env.DIALOGFLOW_PROJECT_ID;
 // sessionId: String representing a random number or hashed user identifier
-const sessionId = "23847923" || Math.floor(Math.random() * 10000000).toString();
+const sessionId = Math.floor(Math.random() * 10000000).toString();
 // queries: A set of sequential queries to be send to Dialogflow agent for Intent Detection
 const queries = [
   "Reserve a meeting room in Toronto office, there will be 5 of us",
